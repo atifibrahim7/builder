@@ -28,7 +28,8 @@ public class Main extends Application {
         launch(args);
     }
     
-    public static Connection getConnection() {
+    public static Connection getConnection() 
+    {
         try {
         	
         	  String URL = "jdbc:postgresql://localhost:5432/postgres";
