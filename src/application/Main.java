@@ -24,6 +24,7 @@ public class Main extends Application {
     public static void main(String[] args) {
     	Main.getConnection();
     	Controller c = new Controller() ; 
+    	c.login();
     	c.controller_start();
         launch(args);
     }
