@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<HBox  fx:controller="application.LoginController" prefWidth="800" prefHeight="500" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #F7F7F7; -fx-border-radius: 15; -fx-background-radius: 15;">
+<HBox  fx:controller="application.Controller" prefWidth="800" prefHeight="800" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #F7F7F7; -fx-border-radius: 15; -fx-background-radius: 15;">
   <!-- Login Section -->
     <VBox alignment="CENTER" spacing="20" prefWidth="500" style="-fx-padding: 40; -fx-background-color: white;">
         <children>
@@ -24,7 +24,7 @@
                     <Button text="Forgot password?" GridPane.rowIndex="4" GridPane.columnIndex="0" style="-fx-background-color: transparent; -fx-text-fill: #7E7E7E;"/>
                 </children>
             </GridPane>
-            <Button  onMouseClicked="#handleLoginAction" text="SIGN IN" style="-fx-background-color: #D1AA5A; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 40; -fx-background-radius: 20;"/>
+            <Button  onMouseClicked="#login" text="SIGN IN" style="-fx-background-color: #D1AA5A; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 40; -fx-background-radius: 20;"/>
         </children>
     </VBox>
 
@@ -33,7 +33,7 @@
         <children>
             <Label text="Don't have an account?" style="-fx-text-fill: white; -fx-font-size: 16;"/>
             <Label text="Please Sign up!" style="-fx-text-fill: white; -fx-font-size: 14;"/>
-            <Button text="SIGN UP" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 20;"/>
+            <Button text="SIGN UP" onMouseClicked="#goToRegister"  style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white; -fx-padding: 10 20; -fx-border-radius: 20;"/>
         </children>
     </VBox>
 </HBox>
